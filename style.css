@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:wght@300;400;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 10px;
+    box-sizing: border-box;
+
+}
+/* Colours */
+:root{
+    --primary-colour:#7651DC ;
+    --secondary-colour:#FFCC69 ;
+    --tertiary-colour:#DCD1FC;
+    --tertiary-colour2: #FAEEE2;
+    --light-colour: #F5F5F5;
+}
+
+body{
+background-color: var(--light-colour);
+}
+
+.item{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns:repeat(4, 1fr);
+   
+}
+
+
+@media(max-width:950px){
+    .item{
+       display:flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: 90%;
+       height: auto;
+    }
+    .item-3{
+        width: 100%;
+    }
+    .item-4{
+        width: 100%;
+    }
+ .item-6{
+    display: flex;
+   
+   
+ }
+ .item-7{
+    width: 100%;
+ }
+ .item-8{
+    width: 100%;
+ }
+}
+
+
+.item-1{
+    background-color: var(--primary-colour);
+    color: white;
+  
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    margin-top: 20px;
+    padding: 30px;
+    line-height: 1;
+    border-radius: 5px;
+
+    grid-area: 1/2/2/4 ;
+}
+.item-1 img {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.item-1 h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.item-1 h5{
+    font-size: 19px;
+    font-weight: 300;
+}
+.item-2{
+    background-color: #ffff;
+    font-family: "DM Sans", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+    line-height: 1.5;
+    border-radius: 5px;
+    grid-area: 2/2/3/3;
+}
+.item-2 img {
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.item-2 h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+.item-3{
+    background-color: var(--secondary-colour);
+    font-family: "DM Sans", sans-serif;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+.item-3 img {
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+   
+
+}
+.item-3 h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+.item-4{
+    background-color: var(--tertiary-colour);
+    font-family: "DM Sans", sans-serif;
+
+    margin-top: 20px;
+    padding: 30px;
+    line-height: 1.5;
+    border-radius: 5px;
+    grid-area: 1/4/3/4;
+}
+.item-4 img {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.item-4 h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+.item-4 h4{
+    font-size: 19px;
+    font-weight: 500;
+}
+.item-5{
+    background-color: var(--primary-colour);
+    color: #ffff;
+    font-family: "DM Sans", sans-serif;
+    margin-top: 20px;
+    padding: 30px;
+    line-height: 1.5;
+    border-radius: 5px;
+    grid-area: 3/3/4/5;
+}
+.item-5 img {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.item-5 h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+.item-6{
+    background-color:#ffff;
+    font-family: "DM Sans", sans-serif;
+    margin-top: 20px;
+    padding: 30px;
+    line-height: 1.5;
+    border-radius: 5px;
+}
+.item-6 img {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.item-6 h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+.item-6 h5{
+    font-size: 20px;
+    font-weight: 500;
+}
+.item-7{
+    background-color:var(--tertiary-colour2);
+    font-family: "DM Sans", sans-serif;
+    margin-top: 20px;
+    padding: 30px;
+    line-height: 1.5;
+    border-radius: 5px;
+    grid-area: 1/1/3/2;
+}
+.item-7 img {
+    width: 160px;
+    margin-top: 60px;
+    margin-right: 20px;
+
+}
+.item-7 h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+.item-8{
+    background-color:var(--secondary-colour);
+    font-family: "DM Sans", sans-serif;
+    margin-top: 20px;
+    padding: 20px;
+    line-height: 1;
+    border-radius: 5px;
+
+
+    grid-area: 3/1/5/2;
+}
+.item-8 img {
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.item-8 h3{
+    font-size: 30px;
+    font-weight: 500;
+}
